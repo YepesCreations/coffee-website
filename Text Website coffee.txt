@@ -1,0 +1,145 @@
+========== HOME ==========
+.home__title
+Elige Tu Café Favorito Y Disfruta<span>.</span>
+
+.home__description
+Compra los cafés más deliciosos y de la mejor calidad.
+
+.home__data-number | .home__data-title | .home__data-description
+120K
+Testimonios
+Opiniones de diversos clientes que confían en nosotros.
+
+340+
+Producto Exclusivo
+Preparación premium con ingredientes de calidad.
+
+========== ESPECIALTY ==========
+.section__subtitle
+¡Cafés de especialidad que alegran tu día y te llenan de energía!
+
+.specialty__title | .specialty__description
+Café Seleccionado
+Seleccionamos los mejores cafés premium para un sabor auténtico.
+
+Galletas Deliciosas
+Disfruta de tu café acompañado de unas galletas recién horneadas.
+
+Disfruta en Casa
+Disfruta del mejor café en la comodidad de tu hogar.
+
+========== PRODUCTS ==========
+.section__subtitle
+Elige nuestros deliciosos y mejores productos.
+
+.products__title | .products__stock
+Nuevas Delicias
+3 productos
+
+Café Caliente
+4 productos
+
+Pasteles Y Delicias
+4 productos
+
+.products__price | .products__name
+$5
+Galletas
+
+$6
+Croissant
+
+$4
+Croissant
+
+------------
+$7
+Café Negro
+
+$12
+Café Puro
+
+$9
+Café con Leche
+
+$9
+Café Moka
+
+------------
+$6
+Pastel con Crema
+
+$5
+Croissant de Chocolate
+
+$15
+Panqueque
+
+$12
+Pastel de Leche
+
+========== QUALITY ==========
+.section__subtitle
+¡Ofrecemos una preparación premium y de la mejor calidad solo para ti!
+
+.quality__title
+Café Premium
+
+.quality__price
+$94.99
+
+.quality__special
+Precio Especial
+
+.quality__description
+Estamos encantados con nuestro café. Por eso, obtienes el mejor 
+café premium más el hervidor fabricado con materiales resistentes 
+que ves en la imagen, a un precio especial.
+
+========== BLOG ==========
+.section__subtitle
+Nuestros blogs sobre café con los temas más interesantes de la semana.
+
+.blog__title | .blog__description
+10 Recomendaciones de Café
+Los blogs sobre café te ayudarán mucho a conocer 
+cómo prepararlo, sus tiempos de espera y cómo lograr 
+un café de calidad.
+
+12 Beneficios de Tomar Café
+Los blogs sobre café te ayudarán mucho a conocer 
+cómo prepararlo, sus tiempos de espera y cómo lograr 
+un café de calidad.
+
+========== FOOTER ==========
+.footer__title
+Café.
+
+.footer__description
+Suscríbete a nuestro boletín.
+
+.footer__subtitle | .footer__information
+Dirección
+9876 Hacienda Av. <br>
+Lima, La Libertad 123, Perú
+
+Contacto
++987654321 <br>
+coffee@email.com
+
+Oficina
+Lunes - Sábado <br>
+9AM - 10PM
+
+.footer__social-link
+https://www.facebook.com/
+https://www.instagram.com/
+https://twitter.com/
+
+.footer__copy
+<footer class="footer">
+    <p class="footer__copy">
+        &#169; YepesCreations. Página desarrollada por <strong>YepesCreations</strong> siguiendo el diseño original de <a href="https://www.youtube.com/watch?v=kObf5-dJMpw&list=PL07efmqYWHZ_cxA1GvuXQMA-VYk8dhuiv&index=34&ab_channel=Bedimcode" target="_blank">Bedimcode</a>. Todos los derechos reservados.
+    </p>
+</footer>
+
