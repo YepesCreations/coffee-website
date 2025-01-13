@@ -6,15 +6,386 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Website</title>
     <!-- =====  FAVICON ===== -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
     <!-- =====  BOXICONS ===== -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- =====  CUSTOM STYLES ===== -->
-     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <h1>Hola Mundo</h1>
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img" />
+          Coffee.
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">Productos</a>
+            </li>
+            <li class="nav__item">
+              <a href="#premium" class="nav__link">Premium</a>
+            </li>
+            <li class="nav__item">
+              <a href="#blog" class="nav__link">Blog</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+      <!-- Home -->
+      <section class="home grid" id="home">
+        <div class="home__container">
+          <div class="home__content container">
+            <h1 class="home__title">
+              Elige Tu Café Favorito Y Disfruta<span>.</span>
+            </h1>
+            <p class="home__description">
+              Compra los cafés más deliciosos y de la mejor calidad.
+            </p>
+
+            <div class="home__data">
+              <div class="home__data-group">
+                <h2 class="home__data-number">120K</h2>
+                <h3 class="home__data-title">Testimonios</h3>
+                <p class="home__data-description">
+                  Opiniones de diversos clientes que confían en nosotros.
+                </p>
+              </div>
+
+              <div class="home__data-group">
+                <h2 class="home__data-number">340+</h2>
+                <h3 class="home__data-title">Producto Exclusivo</h3>
+                <p class="home__data-description">
+                  Preparación premium con ingredientes de calidad.
+                </p>
+              </div>
+            </div>
+
+            <a href="#specialty">
+              <img
+                class="home__scroll"
+                src="assets/img/scroll.png"
+                alt="Imagen de invitación"
+              />
+            </a>
+          </div>
+        </div>
+
+        <img src="assets/img/home.png" alt="Imagen de café" class="home__img" />
+      </section>
+
+      <!-- Specialty -->
+      <div class="specialty section container" id="specialty">
+        <div class="specialty__container">
+          <div class="specialty__box">
+            <h2 class="section__title">
+              ¡Cafés de especialidad que alegran tu día y te llenan de energía!
+            </h2>
+
+            <div>
+              <a href="#" class="button specialty__button">cónoce más</a>
+            </div>
+          </div>
+
+          <div class="specialty__category">
+            <div class="specialty__group">
+              <img
+                src="assets/img/specialty1.png"
+                alt="Grano de café"
+                class="specialty__img"
+              />
+              <h3 class="specialty__title">Café Seleccionado</h3>
+              <p class="specialty__description">
+                Seleccionamos los mejores cafés premium para un sabor auténtico.
+              </p>
+            </div>
+
+            <div class="specialty__group">
+              <img
+                src="assets/img/specialty2.png"
+                alt="Galletas"
+                class="specialty__img"
+              />
+              <h3 class="specialty__title">Galletas Deliciosas</h3>
+              <p class="specialty__description">
+                Disfruta de tu café acompañado de unas galletas recién
+                horneadas.
+              </p>
+            </div>
+
+            <div class="specialty__group">
+              <img
+                src="assets/img/specialty3.png"
+                alt="Vaso de café"
+                class="specialty__img"
+              />
+              <h3 class="specialty__title">Disfruta en Casa</h3>
+              <p class="specialty__description">
+                Disfruta del mejor café en la comodidad de tu hogar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <section class="products section" id="products">
+        <div class="products__container container">
+          <h2 class="section__title">
+            Elige nuestros deliciosos y mejores productos.
+          </h2>
+
+          <ul class="products__filters">
+            <li class="products__item products__line active-product" data-filter=".delicacies">
+              <h3 class="products__title">Nuevas Delicias</h3>
+              <span class="products__stock"> 3 productos </span>
+            </li>
+
+            <li class="products__item products__line" data-filter=".coffee">
+              <h3 class="products__title">Cafés Calientes</h3>
+              <span class="products__stock"> 4 productos </span>
+            </li>
+
+            <li class="products__item" data-filter=".cake">
+              <h3 class="products__title">Pasteles Y Delicias</h3>
+              <span class="products__stock"> 4 productos </span>
+            </li>
+          </ul>
+
+          <div class="products__content grid">
+            <!-- Delicacies -->
+            <article class="products__card delicacies">
+              <div class="products__shape">
+                <img
+                  src="assets/img/delicacies1.png"
+                  alt="Galletas"
+                  class="products__img"
+                />
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$5</h2>
+                <h3 class="products__name">Galletas</h3>
+                <button class="button products__button">
+                  <i class="bx bx-shopping-bag"></i>
+                </button>
+              </div>
+            </article>
+
+            <article class="products__card delicacies">
+              <div class="products__shape">
+                <img
+                  src="assets/img/delicacies2.png"
+                  alt="Croissant"
+                  class="products__img"
+                />
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$6</h2>
+                <h3 class="products__name">Croissant</h3>
+                <button class="button products__button">
+                  <i class="bx bx-shopping-bag"></i>
+                </button>
+              </div>
+            </article>
+
+            <article class="products__card delicacies">
+              <div class="products__shape">
+                <img
+                  src="assets/img/delicacies3.png"
+                  alt="Pretzels"
+                  class="products__img"
+                />
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$4</h2>
+                <h3 class="products__name">Pretzels</h3>
+                <button class="button products__button">
+                  <i class="bx bx-shopping-bag"></i>
+                </button>
+              </div>
+            </article>
+            <!-- Coffee -->
+            <article class="products__card coffee">
+              <div class="products__shape">
+                <img
+                  src="assets/img/coffee1.png"
+                  alt="Café Negro"
+                  class="products__img"
+                />
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$7</h2>
+                <h3 class="products__name">Café Negro</h3>
+                <button class="button products__button">
+                  <i class="bx bx-shopping-bag"></i>
+                </button>
+              </div>
+            </article>
+
+            <article class="products__card coffee">
+              <div class="products__shape">
+                <img
+                  src="assets/img/coffee2.png"
+                  alt="Café Puro"
+                  class="products__img"
+                />
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$12</h2>
+                <h3 class="products__name">Café Puro</h3>
+                <button class="button products__button">
+                  <i class="bx bx-shopping-bag"></i>
+                </button>
+              </div>
+            </article>
+
+            <article class="products__card coffee">
+              <div class="products__shape">
+                <img
+                  src="assets/img/coffee3.png"
+                  alt="Café con Leche"
+                  class="products__img"
+                />
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$9</h2>
+                <h3 class="products__name">Café con Leche</h3>
+                <button class="button products__button">
+                  <i class="bx bx-shopping-bag"></i>
+                </button>
+              </div>
+            </article>
+
+            <article class="products__card coffee">
+              <div class="products__shape">
+                <img
+                  src="assets/img/coffee4.png"
+                  alt="Café Moka"
+                  class="products__img"
+                />
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$9</h2>
+                <h3 class="products__name">Café Moka</h3>
+                <button class="button products__button">
+                  <i class="bx bx-shopping-bag"></i>
+                </button>
+              </div>
+            </article>
+            <!-- Cake -->
+            <article class="products__card cake">
+              <div class="products__shape">
+                <img
+                  src="assets/img/cake1.png"
+                  alt="Pastel con Crema"
+                  class="products__img"
+                />
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$6</h2>
+                <h3 class="products__name">Pastel con Crema</h3>
+                <button class="button products__button">
+                  <i class="bx bx-shopping-bag"></i>
+                </button>
+              </div>
+            </article>
+
+            <article class="products__card cake">
+              <div class="products__shape">
+                <img
+                  src="assets/img/cake2.png"
+                  alt="Croissant de Chocolate"
+                  class="products__img"
+                />
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$5</h2>
+                <h3 class="products__name">Croissant de Chocolate</h3>
+                <button class="button products__button">
+                  <i class="bx bx-shopping-bag"></i>
+                </button>
+              </div>
+            </article>
+
+            <article class="products__card cake">
+              <div class="products__shape">
+                <img
+                  src="assets/img/cake3.png"
+                  alt="Panqueque"
+                  class="products__img"
+                />
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$15</h2>
+                <h3 class="products__name">Panqueque</h3>
+                <button class="button products__button">
+                  <i class="bx bx-shopping-bag"></i>
+                </button>
+              </div>
+            </article>
+
+            <article class="products__card cake">
+              <div class="products__shape">
+                <img
+                  src="assets/img/cake4.png"
+                  alt="Pastel de Leche"
+                  class="products__img"
+                />
+              </div>
+
+              <div class="products__data">
+                <h2 class="products__price">$12</h2>
+                <h3 class="products__name">Pastel de Leche</h3>
+                <button class="button products__button">
+                  <i class="bx bx-shopping-bag"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- ===== MIXITUP FILTER ===== -->
+     <script src="assets/js/mixitup.min.js"></script>
     <!-- ===== MAIN JS ===== -->
+    <script src="assets/js/main.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
