@@ -361,7 +361,7 @@ button {
   margin-bottom: 3.5rem;
 }
 
-.products__line{
+.products__line {
   position: relative;
 }
 
@@ -377,85 +377,349 @@ button {
   margin: auto 0;
 }
 
-
-.products__item{
+.products__item {
   cursor: pointer;
 }
 
-.products__title{
+.products__title {
   font-size: var(--h3-font-size);
   color: var(--text-color);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   transition: 0.2s;
 }
 
-.products__stock{
+.products__stock {
   font-size: var(--small-font-size);
 }
 
-.procusts__content{
+.procusts__content {
   grid-template-columns: 12.5rem;
   justify-content: center;
 }
 
-.products__card{
+.products__card {
   background-color: var(--container-color);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
-.products__img{
+.products__img {
   width: 9.375rem;
-  transition: .4s;
+  transition: 0.4s;
 }
 
-.products__shape{
+.products__shape {
   background-color: var(--card-color);
-  border-radius: .5rem .5rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
   text-align: center;
-  padding: .25rem 0;
+  padding: 0.25rem 0;
 }
 
-.products__data{
+.products__data {
   padding: 1rem 0 1.25rem 1rem;
   position: relative;
 }
 
-.products__price{
+.products__price {
   font-size: var(--h2-font-size);
 }
 
-.products__name{
+.products__name {
   font-size: var(--normal-font-size);
 }
 
-.products__button{
+.products__button {
   border-radius: 50%;
-  padding: .625rem;
+  padding: 0.625rem;
   display: inline-flex;
   font-size: 1.25rem;
   position: absolute;
   right: 1rem;
   top: -1.25rem;
-  box-shadow: 0 4px 12px hsla(206, 4%, 4%, .2);
+  box-shadow: 0 4px 12px hsla(206, 4%, 4%, 0.2);
 }
 
-
-.products__card:hover .products__img{
-  transform: translateY(-.25rem);
+.products__card:hover .products__img {
+  transform: translateY(-0.25rem);
 }
 
 /* Active link products */
-.active-product .products__title{
+.active-product .products__title {
   color: var(--title-color);
   font-size: 1.05rem;
 }
-/*=============== QUALITY ===============*/
 
-/*=============== LOGOS ===============*/
+/*===== QUALITY =====*/
+.quality {
+  background-color: #fff;
+}
 
-/*=============== BLOG ===============*/
+.quality__content {
+  row-gap: 2.5rem;
+}
 
-/*=============== FOOTER ===============*/
+.quality__images {
+  position: relative;
+  justify-self: center;
+}
+
+.quality__img-big,
+.quality__img-small {
+  border-radius: 0.5rem;
+}
+
+.quality__img-big {
+  width: 17.5rem;
+}
+
+.quality__img-small {
+  width: 6.25rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  transform: translateX(-5rem);
+}
+
+.quality__title,
+.quality__price {
+  font-size: var(--h1-font-size);
+}
+
+.quality__title {
+  margin-bottom: 0.75rem;
+}
+
+.quality__price {
+  margin-bottom: 0.25rem;
+}
+
+.quality__special {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 0.75rem;
+}
+
+.quality__description {
+  margin-bottom: 2.5rem;
+}
+
+.quality__buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.quality__button {
+  font-size: var(--smaller-font-size);
+  text-transform: uppercase;
+  color: var(--title-color);
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.75rem;
+}
+
+.quality__button i {
+  font-size: 1.25rem;
+  transition: 0.4s;
+}
+
+.quality__button:hover i {
+  transform: translateX(0.25rem);
+}
+
+/*===== LOGOS =====*/
+.logo {
+  background-color: #fff;
+}
+
+.logo__container {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 2.5rem 2rem;
+  border-top: 1px solid var(--text-color-light);
+  padding-top: 2.5rem;
+}
+
+.logo__img {
+  width: 5rem;
+  mix-blend-mode: luminosity;
+  opacity: 0.4;
+  transition: 0.4s;
+}
+
+.logo__img:hover {
+  opacity: 0.8;
+}
+
+/*===== BLOG =====*/
+.blog__container {
+  padding-bottom: 2rem;
+}
+
+.blog__content {
+  row-gap: 3rem;
+}
+
+.blog__image {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.blog__img {
+  border-radius: 0.5rem;
+}
+
+.blog__button {
+  display: inline-flex;
+  background-color: #fff;
+  padding: 1.15rem;
+  border-radius: 0.5rem 0 0.5rem 0;
+  font-size: 2rem;
+  color: var(--title-color);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.blog__button i {
+  transform: rotate(-30deg);
+  transition: 0.4s;
+}
+
+.blog__button:hover i {
+  transform: rotate(-30deg) translateX(0.25rem);
+}
+
+.blog__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 0.75rem;
+}
+
+.blog__description {
+  margin-bottom: 1.5rem;
+}
+
+.blog__footer,
+.blog__reaction {
+  display: flex;
+  align-items: center;
+}
+
+.blog__footer {
+  column-gap: 1.5rem;
+}
+
+.blog__reaction {
+  column-gap: 0.25rem;
+}
+
+.blog__reaction i {
+  font-size: 1.25rem;
+}
+
+.blog__reaction span {
+  font-size: var(--small-font-size);
+}
+
+/*===== FOOTER =====*/
+.footer {
+  background-color: var(--black-color);
+  padding: 4rem 0 2.5rem;
+}
+
+.footer__title {
+  color: #fff;
+  font-size: var(--h1-font-size);
+  margin-bottom: 2rem;
+}
+
+.footer__description {
+  margin-bottom: 0.75rem;
+}
+
+.footer__newsletter {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.footer__input {
+  border: none;
+  outline: none;
+  padding: 1.25rem 1rem;
+  border-radius: 0.25rem;
+  width: 70%;
+  color: var(--text-color);
+}
+
+.footer__button {
+  padding: 0.75rem;
+  font-size: 2rem;
+  border-radius: 0.25rem;
+  display: inline-flex;
+  background-color: var(--first-color);
+}
+
+.footer__button i {
+  transform: rotate(-30deg);
+  transition: 0.4s;
+}
+
+.footer__button:hover i {
+  transform: rotate(-30deg) translate(0.25rem);
+}
+
+.footer__content {
+  row-gap: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.footer__subtitle {
+  color: #fff;
+  font-size: var(--h2-font-size);
+  margin-bottom: 0.75rem;
+}
+
+.footer__flag {
+  width: 1rem;
+}
+
+.footer__group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.footer__social-link {
+  color: #fff;
+  transition: 0.4s;
+}
+
+.footer__social-link:hover {
+  color: var(--first-color);
+}
+
+footer a {
+  color: var(--text-color);
+}
+
+.logo__yepescreation {
+  width: 6.5rem;
+}
+
+footer strong {
+  color: var(--first-color);
+}
 
 /*=============== SCROLL BAR ===============*/
 
